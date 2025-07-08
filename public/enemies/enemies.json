@@ -1,0 +1,61 @@
+{
+  "commander_ego": {
+    "name": "Commander's Ego",
+    "hp": 425,
+    "sp": 150,
+    "ammo": 0,
+    "sprite": "commanderEgo",
+    "type": "physical",
+    "skills": [
+      {
+        "name": "Ego's Blessing",
+        "cost": 0,
+        "power": 0,
+        "type": "support",
+        "accuracy": 100,
+        "description": "Gain more actions."
+      },
+      {
+        "name": "Ego's Wrath",
+        "cost": 0,
+        "power": 40,
+        "type": "physical",
+        "accuracy": 95,
+        "description": "A powerful strike."
+      },
+      {
+        "name": "Ego's Malice",
+        "cost": 0,
+        "power": 25,
+        "type": "void",
+        "accuracy": 90,
+        "description": "A lesser strike that can inflict status ailments."
+      }
+    ],
+    "damageSound": "sfx_ego_damage",
+    "deathSound": "sfx_ego_death"
+  },
+  "normal": {
+    "name": "Normal",
+    "hp": 25,
+    "sp": 0,
+    "ammo": 0,
+    "sprite": "normal",
+    "type": "physical",
+    "skills": [
+      {
+        "name": "Lunge",
+        "cost": 0,
+        "power": 10,
+        "type": "physical",
+        "accuracy": 90,
+        "description": "A basic lunge attack."
+      }
+    ]
+  },
+  "normal_horde": [
+    { "id": "normal", "x": 500, "y": 250 },
+    { "id": "normal", "x": 640, "y": 300 },
+    { "id": "normal", "x": 780, "y": 250 }
+  ]
+}

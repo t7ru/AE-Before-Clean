@@ -1,0 +1,61 @@
+[
+  {
+    "character": "Commander",
+    "sprite": "commanderSkeptical",
+    "text": "Looks like I'm going in alone. Heh, just like the old days.",
+    "conditions": { "partySize": 1 }
+  },
+  {
+    "character": "Commander",
+    "sprite": "commanderDefault",
+    "text": "Alright {party[1].name}, just the two of us. Let's move out.",
+    "conditions": { "partySize": 2 }
+  },
+  {
+    "character": "Commander",
+    "sprite": "commanderDefault",
+    "text": "Alright team, sound off. We're moving out.",
+    "conditions": { "partySize": 3 }
+  },
+  {
+    "character": "Narrator",
+    "sprite": "narratorTalk",
+    "background": "marshlandsCliff",
+    "text": "Leaving the eerie silence of the station behind, Commander with his bravery, walks past the train station and enters the forest. A chasm of jagged rock and swirling fog marks the entrance. The air grows cold.",
+    "conditions": { "partySize": 1 }
+  },
+  {
+    "character": "Narrator",
+    "sprite": "narratorTalk",
+    "background": "marshlandsCliff",
+    "text": "Leaving the eerie silence of the station behind, the duo walks past the train station and enters the forest. A chasm of jagged rock and swirling fog marks the entrance. The air grows cold.",
+    "conditions": { "partySize": 2 }
+  },
+  {
+    "character": "Narrator",
+    "sprite": "narratorTalk",
+    "background": "marshlandsCliff",
+    "text": "Leaving the eerie silence of the station behind, the team walks past the train station and enters the forest. A chasm of jagged rock and swirling fog marks the entrance. The air grows cold.",
+    "conditions": { "partySize": 3 }
+  },
+  {
+    "character": "Commander",
+    "sprite": "commanderDefault",
+    "text": "Let me check the God Cube detector."
+  },
+  {
+    "character": "Commander",
+    "sprite": "commanderDefault2",
+    "text": "Seems like its reading remains accurate, it even is growing stronger."
+  },
+  {
+    "character": "???",
+    "sprite": "voidCasterDepressed",
+    "text": "Commander..."
+  },
+  {
+    "character": "Narrator",
+    "sprite": "narratorTalk",
+    "text": "Unfortunately, the Commander did not hear the voice."
+  }
+]

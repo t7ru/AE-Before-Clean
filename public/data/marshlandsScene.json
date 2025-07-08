@@ -1,0 +1,544 @@
+{
+  "initialLocation": "marshlands1",
+  "scripts": {
+    "part2": [
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault2",
+        "text": "Okay, {party[1].name}, let me clue you in on how we're going to approach this.",
+        "conditions": { "partySize": 2 }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault2",
+        "text": "Okay, team, let me clue you in on how we're going to approach this.",
+        "conditions": { "partySize": 3 }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderTeaching",
+        "text": "Apparently there is a labyrinth somewhere in the marshlands, which should contains a God Cube fragment.",
+        "conditions": { "partySize": [2, 3] }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderTeaching",
+        "text": "And preferably, the Dispatcher wants us to stay as stealthily as we can.",
+        "conditions": { "partySize": [2, 3] }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault2",
+        "text": "If things goes south, however, you have my permission to engage the situation however you see fit.",
+        "conditions": { "partySize": [2, 3] }
+      },
+      {
+        "character": "Pyromancer",
+        "sprite": "pyromancerDefault",
+        "text": "So... 'engage the situation however you see fit' means I can set the whole place on fire, right? Please say yes.",
+        "conditions": { "partySize": [2, 3], "hasMember": "Pyromancer" }
+      },
+      {
+        "character": "Toxic Gunner",
+        "sprite": "toxicGunnerDefault",
+        "text": "Just try not to burn our only way out this time, Pyromancer.",
+        "conditions": {
+          "partySize": 3,
+          "hasMember": ["Pyromancer", "Toxic Gunner"]
+        }
+      },
+      {
+        "character": "Sledger",
+        "sprite": "sledgerDefault",
+        "text": "I'll keep an eye on her.",
+        "conditions": { "partySize": 3, "hasMember": ["Pyromancer", "Sledger"] }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDisappointed",
+        "text": "Pyromancer, as I've said, try and stay stealthy. We don't want to draw attention.",
+        "conditions": { "partySize": [2, 3], "hasMember": ["Pyromancer"] }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault",
+        "text": "Got it, people?",
+        "conditions": { "partySize": 3 }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault",
+        "text": "Got it?",
+        "conditions": { "partySize": 2 }
+      },
+      {
+        "character": "Scout",
+        "sprite": "scoutDefault",
+        "text": "Sir, yessire!",
+        "conditions": { "partySize": [2, 3], "hasMember": "Scout" }
+      },
+      {
+        "character": "Toxic Gunner",
+        "sprite": "toxicGunnerDefault",
+        "text": "Got it, Commander.",
+        "conditions": { "partySize": [2, 3], "hasMember": "Toxic Gunner" }
+      },
+      {
+        "character": "Sledger",
+        "sprite": "sledgerDefault",
+        "text": "Affirmative.",
+        "conditions": { "partySize": [2, 3], "hasMember": "Sledger" }
+      },
+      {
+        "character": "Pyromancer",
+        "sprite": "pyromancerDefault",
+        "text": "Understood, Commander.",
+        "conditions": { "partySize": [2, 3], "hasMember": "Pyromancer" }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault2",
+        "text": "Hmm, so how should I approach this situation...",
+        "conditions": { "partySize": 1 }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderTeaching",
+        "text": "Apparently there is a labyrinth somewhere in the marshlands, which should contains a God Cube fragment.",
+        "conditions": { "partySize": 1 }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderTeaching",
+        "text": "And preferably, the Dispatcher wants me to stay stealthy.",
+        "conditions": { "partySize": 1 }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDisappointed",
+        "text": "Oh well, who cares, I'm unbeatable!",
+        "conditions": { "partySize": 1 }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderSneaky",
+        "text": "Time to move out!"
+      }
+    ],
+    "marshlands4_entry": [
+      {
+        "character": "Commander",
+        "sprite": "commanderSkeptical",
+        "background": "marshlands4",
+        "text": "This fog is getting thicker. I don't like it."
+      },
+      {
+        "character": "Scout",
+        "sprite": "scoutDefault",
+        "text": "Commander, I think I see something in the distance.",
+        "conditions": { "partySize": [2, 3], "hasMember": "Scout" }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault2",
+        "text": "What is it, Scout?",
+        "conditions": { "partySize": [2, 3], "hasMember": "Scout" }
+      },
+      {
+        "character": "Scout",
+        "sprite": "scoutDefault",
+        "text": "A structure, maybe a ruin? It's hard to tell through the fog.",
+        "conditions": { "partySize": [2, 3], "hasMember": "Scout" }
+      },
+      {
+        "character": "Sledger",
+        "sprite": "sledgerDefault",
+        "text": "A ruin in a place like this? I do not believe anyone would dare to build something here.",
+        "conditions": { "partySize": 3, "hasMember": ["Scout", "Sledger"] }
+      },
+      {
+        "character": "Pyromancer",
+        "sprite": "pyromancerDefault",
+        "text": "Whoa, check that out! Something big is out there!",
+        "conditions": {
+          "partySize": [3],
+          "hasMember": ["Pyromancer", "Toxic Gunner"]
+        }
+      },
+      {
+        "character": "Toxic Gunner",
+        "sprite": "toxicGunnerDefault",
+        "text": "Oh, shut up Pyromancer, you always see something big out there, stop being paranoid.",
+        "conditions": {
+          "partySize": [3],
+          "hasMember": ["Pyromancer", "Toxic Gunner"]
+        }
+      },
+      {
+        "character": "Pyromancer",
+        "sprite": "pyromancerDefault",
+        "text": "No, really! Look at that! It's like a car!",
+        "conditions": {
+          "partySize": [3],
+          "hasMember": ["Pyromancer", "Toxic Gunner"]
+        }
+      },
+      {
+        "character": "Pyromancer",
+        "sprite": "pyromancerDefault",
+        "text": "Whoa, check that out! Something big is out there!",
+        "conditions": {
+          "partySize": [2, 3],
+          "hasMember": "Pyromancer",
+          "lacksMember": ["Scout", "Toxic Gunner"]
+        }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderSkeptical",
+        "text": "Easy, Pyromancer. We don't know what it is yet.",
+        "conditions": {
+          "partySize": [2, 3],
+          "hasMember": "Pyromancer",
+          "lacksMember": "Scout"
+        }
+      },
+      {
+        "character": "Sledger",
+        "sprite": "sledgerDefault",
+        "text": "Commander. Up ahead. Potential structure. Could be hostiles.",
+        "conditions": {
+          "partySize": [2, 3],
+          "hasMember": "Sledger",
+          "lacksMember": ["Scout", "Pyromancer"]
+        }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault",
+        "text": "Good eye, Sledger. Stay sharp.",
+        "conditions": {
+          "partySize": [2, 3],
+          "hasMember": "Sledger",
+          "lacksMember": ["Scout", "Pyromancer"]
+        }
+      },
+      {
+        "character": "Toxic Gunner",
+        "sprite": "toxicGunnerDefault",
+        "text": "There's a silhouette in the mist. Could be trouble, could be nothing.",
+        "conditions": {
+          "partySize": [2, 3],
+          "hasMember": "Toxic Gunner",
+          "lacksMember": ["Scout", "Pyromancer", "Sledger"]
+        }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault",
+        "text": "Let's hope for the latter. We'll proceed with caution.",
+        "conditions": {
+          "partySize": [2, 3],
+          "hasMember": "Toxic Gunner",
+          "lacksMember": ["Scout", "Pyromancer", "Sledger"]
+        }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderSkeptical",
+        "text": "What is that...? A car? Out here? Strange.",
+        "conditions": { "partySize": 1 }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault2",
+        "text": "I'd better give the Dispatcher a call."
+      },
+      {
+        "character": "Narrator",
+        "sprite": "narratorTalk",
+        "text": "The Commander pulls out his communicator and begins dialing."
+      }
+    ],
+    "marshlands5_entry": [
+      {
+        "character": "Commander",
+        "sprite": "commanderTeaching",
+        "text": "Dispatcher, it's Commander. There is some sort of long structure ahead."
+      },
+      {
+        "character": "Dispatcher",
+        "sprite": "dispatcherThinking",
+        "text": "Understood. Any signs of life? Or the target?"
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderSkeptical",
+        "text": "Positive on the former, negative on the latter. I'm proceeding with caution."
+      },
+      {
+        "character": "Dispatcher",
+        "sprite": "dispatcherNeutral",
+        "text": "Acknowledged. Keep me updated. Dispatcher out."
+      }
+    ],
+    "marshlands6_entry": [
+      {
+        "character": "Commander",
+        "sprite": "commanderSneaky",
+        "text": "Wait! Wait! Sooo… Dispatcher. I was thinking that after this, we could grab a bite, you know, just the two of us."
+      },
+      {
+        "character": "Dispatcher",
+        "sprite": "dispatcherThinking2",
+        "text": "..."
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDisappointed",
+        "text": "..."
+      },
+      {
+        "character": "Dispatcher",
+        "sprite": "dispatcherDisappointed",
+        "text": "Commander..?"
+      },
+      {
+        "choices": [
+          {
+            "conditions": { "hasMember": "Scout" },
+            "lines": [
+              {
+                "character": "Scout",
+                "sprite": "scoutDefault",
+                "text": "Commander, snap out of it! We've got hostiles, multiple contacts!"
+              },
+              {
+                "character": "Commander",
+                "sprite": "commanderAggressive",
+                "text": "What? Where?"
+              },
+              {
+                "character": "Scout",
+                "sprite": "scoutDefault",
+                "text": "In front of us, they're coming in fast!"
+              }
+            ]
+          },
+          {
+            "conditions": { "hasMember": "Pyromancer", "lacksMember": "Scout" },
+            "lines": [
+              {
+                "character": "Pyromancer",
+                "sprite": "pyromancerDefault",
+                "text": "Are you serious right now? You're hitting on her NOW? Commander, LOOK!"
+              },
+              {
+                "character": "Commander",
+                "sprite": "commanderAggressive",
+                "text": "Pyromancer, what is it?"
+              },
+              {
+                "character": "Pyromancer",
+                "sprite": "pyromancerDefault",
+                "text": "ZOMBIES! LOTS OF ZOMBIES!"
+              }
+            ]
+          },
+          {
+            "conditions": {
+              "hasMember": "Sledger",
+              "lacksMember": ["Scout", "Pyromancer"]
+            },
+            "lines": [
+              {
+                "character": "Sledger",
+                "sprite": "sledgerDefault",
+                "text": "Sir, with all due respect, your attention is required on the field. We have unfriendlies."
+              },
+              {
+                "character": "Commander",
+                "sprite": "commanderAggressive",
+                "text": "Report, Sledger."
+              },
+              {
+                "character": "Sledger",
+                "sprite": "sledgerDefault",
+                "text": "Multiple hostiles, shambling, closing position. They don't look human."
+              }
+            ]
+          },
+          {
+            "conditions": {
+              "hasMember": "Toxic Gunner",
+              "lacksMember": ["Scout", "Pyromancer", "Sledger"]
+            },
+            "lines": [
+              {
+                "character": "Toxic Gunner",
+                "sprite": "toxicGunnerDefault",
+                "text": "If you're done sweet-talking the radio, maybe you'd like to notice the welcoming party."
+              },
+              {
+                "character": "Commander",
+                "sprite": "commanderAggressive",
+                "text": "What welcoming party?"
+              },
+              {
+                "character": "Toxic Gunner",
+                "sprite": "toxicGunnerDefault",
+                "text": "The one that wants to eat our brains, hello?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "character": "Toxic Gunner",
+        "sprite": "toxicGunnerDefault",
+        "text": "At least you tried, Commander.",
+        "conditions": {
+          "partySize": 3,
+          "hasMember": ["Toxic Gunner", "Pyromancer"]
+        }
+      },
+      {
+        "character": "Scout",
+        "sprite": "scoutDefault",
+        "text": "I cannot believe you are our Commander, Commander.",
+        "conditions": { "partySize": [2, 3], "hasMember": "Scout" }
+      },
+      {
+        "character": "Sledger",
+        "sprite": "sledgerDefault",
+        "text": "This is embarassing.",
+        "conditions": { "partySize": [2, 3], "hasMember": "Sledger" }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderAggressive",
+        "text": "Well, that's one way to break the tension. GET READY!",
+        "conditions": { "partySize": [2, 3] }
+      },
+      {
+        "character": "Narrator",
+        "sprite": "narratorTalk",
+        "text": "Everyone was ready, except the Commander.",
+        "conditions": { "partySize": [2, 3] }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderAggressive",
+        "text": "Wait, ARE THOSE ZOMBIES?",
+        "conditions": { "partySize": 1 }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderAggressive",
+        "text": "HOLY CRAP!",
+        "conditions": { "partySize": 1 }
+      },
+      {
+        "character": "Dispatcher",
+        "sprite": "dispatcherScared",
+        "text": "Commander, report! What is happening-?"
+      }
+    ],
+    "marshlands9_entry": [
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault2",
+        "text": "That was a close call. Better start saving bullets and resources."
+      },
+      {
+        "character": "Dispatcher",
+        "sprite": "dispatcherScared",
+        "text": "Commander, are you there? What is your status?"
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault2",
+        "text": "Dispatcher, we just had a run-in with a horde of zombies. We're okay, though.",
+        "conditions": { "partySize": [2, 3] }
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault2",
+        "text": "Dispatcher, I've just had a run-in with a horde of zombies. We're okay, though.",
+        "conditions": { "partySize": 1 }
+      },
+      {
+        "character": "Dispatcher",
+        "sprite": "dispatcherNeutral",
+        "text": "Understood. Any signs of the God Cube fragment?"
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault",
+        "text": "Negative. But we're almost at the labyrinth, just a few more steps."
+      },
+      {
+        "character": "Dispatcher",
+        "sprite": "dispatcherThinking",
+        "text": "Proceed with caution, Commander. The Dispatcher out."
+      }
+    ]
+  },
+  "locations": {
+    "marshlands1": {
+      "background": "marshlands1",
+      "hotspots": [{ "x": 670, "y": 347, "destination": "marshlands2" }],
+      "onEnterEventId": "startPart2"
+    },
+    "marshlands2": {
+      "background": "marshlands2",
+      "hotspots": [{ "x": 277, "y": 352, "destination": "marshlands3" }]
+    },
+    "marshlands3": {
+      "background": "marshlands3",
+      "hotspots": [
+        { "x": 710, "y": 357, "destination": "marshlands31" },
+        { "x": 1100, "y": 380, "destination": "marshlands32" }
+      ]
+    },
+    "marshlands31": {
+      "background": "marshlands31",
+      "hotspots": [
+        { "x": 690, "y": 360, "destination": "marshlands4" },
+        { "x": 640, "y": 680, "destination": "marshlands3" }
+      ]
+    },
+    "marshlands32": {
+      "background": "marshlands32",
+      "hotspots": [{ "x": 640, "y": 680, "destination": "marshlands3" }]
+    },
+    "marshlands4": {
+      "background": "marshlands4",
+      "hotspots": [{ "x": 524, "y": 357, "destination": "marshlands5" }],
+      "onEnterEventId": "marshlands4_dialogue"
+    },
+    "marshlands5": {
+      "background": "marshlands5",
+      "hotspots": [],
+      "onEnterEventId": "marshlands5_dialogue"
+    },
+    "marshlands6": {
+      "background": "marshlands6",
+      "hotspots": [],
+      "onEnterEventId": "marshlands6_dialogue"
+    },
+    "marshlands7": {
+      "background": "marshlands7",
+      "hotspots": [{ "x": 1009, "y": 392, "destination": "marshlands8" }]
+    },
+    "marshlands8": {
+      "background": "marshlands8",
+      "hotspots": [{ "x": 772, "y": 340, "destination": "marshlands9" }]
+    },
+    "marshlands9": {
+      "background": "marshlands9",
+      "hotspots": [{ "x": 666, "y": 340, "destination": "startEgoBattle" }],
+      "onEnterEventId": "marshlands9_dialogue"
+    }
+  }
+}

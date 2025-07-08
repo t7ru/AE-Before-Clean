@@ -1,0 +1,38 @@
+[
+  {
+    "character": "Dispatcher",
+    "sprite": "dispatcherNeutral",
+    "text": "Commander, you've arrived. The intel was solid, the readings show that the God Cube fragment is beyond that train station. Secure it quickly."
+  },
+  {
+    "character": "Commander",
+    "sprite": "commanderDisappointed",
+    "text": "Hah, do you remember who you're talking to? Consider it done!"
+  },
+  {
+    "character": "Narrator",
+    "sprite": "narratorTalk",
+    "text": "Commander then departs the train, arriving at the station."
+  },
+  {
+    "character": "Commander",
+    "background": "nightStationDepartTrain",
+    "sprite": "commanderSkeptical",
+    "text": "The station is emptier than usual, too quiet. Any resistance expected?"
+  },
+  {
+    "character": "Dispatcher",
+    "sprite": "dispatcherThinking",
+    "text": "Unlikely within the station itself. But we're detecting... anomalies. Other signatures. We've authorized you to assemble a small team from the operatives available on-site."
+  },
+  {
+    "character": "Commander",
+    "sprite": "commanderDefault",
+    "text": "Understood. I'll gear up and choose my squad."
+  },
+  {
+    "character": "Narrator",
+    "sprite": "narratorEvil",
+    "text": "And so, Commander's journey begins."
+  }
+]

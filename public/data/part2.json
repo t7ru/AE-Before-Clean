@@ -1,0 +1,52 @@
+[
+  {
+    "character": "Commander",
+    "sprite": "commanderTeaching",
+    "text": "'The labyrinth's guardian is unseen, but present. Beware shadows that think themselves allies.' That voice on the first floor — Void Caster? No one truly knows who she is."
+  },
+
+  {
+    "character": "Void Caster",
+    "sprite": "voidcasterCommand",
+    "text": "You move well, but chase shadows you cannot grasp."
+  },
+  {
+    "character": "Commander",
+    "sprite": "commanderDefault2",
+    "text": "I've heard that voice before — just a glimpse, nothing more."
+  },
+  {
+    "character": "Void Caster",
+    "sprite": "voidcasterChallenge",
+    "text": "Prepare for your delusions to catch you."
+  },
+
+  {
+    "character": "Narrator",
+    "sprite": "narratorEvil",
+    "text": "Darkness swallows Commander as defeat claims him."
+  },
+
+  {
+    "character": "Ego",
+    "sprite": "placeholder",
+    "text": "Welcome to the top. I do not guard the Cube — I am what it feared it might become."
+  },
+  {
+    "character": "Commander",
+    "sprite": "commanderScarred",
+    "text": "So this is the real game."
+  },
+
+  {
+    "character": "Narrator",
+    "sprite": "narratorSinister",
+    "text": "The world distorts. Echoing whispers fill the air. The true trial begins."
+  },
+
+  {
+    "character": "Commander",
+    "sprite": "commanderAggressive",
+    "text": "I came for power, but found truth. A thousand minds trapped with me... And Ego doesn't need a Cube. Ego needs us to play."
+  }
+]

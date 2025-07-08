@@ -1,0 +1,91 @@
+{
+  "startPrologue": {
+    "type": "DIALOGUE",
+    "background": "nightStationCliff",
+    "scriptId": "prologueScript",
+    "onCompleteEventId": "moveToDepartTrain"
+  },
+  "moveToDepartTrain": {
+    "type": "CHANGE_LOCATION",
+    "locationId": "departTrain"
+  },
+  "startRecruitment": {
+    "type": "DIALOGUE",
+    "scriptId": "stationSceneData/recruitmentIntro",
+    "onCompleteEventId": "setupRecruitmentScreen"
+  },
+  "setupRecruitmentScreen": {
+    "type": "RECRUITMENT"
+  },
+  "finishRecruitment": {
+    "type": "CHANGE_LOCATION",
+    "locationId": "afterDepart"
+  },
+  "goToBeforeExit": {
+    "type": "CHANGE_LOCATION",
+    "locationId": "beforeExit"
+  },
+  "goToExit": {
+    "type": "CHANGE_LOCATION",
+    "locationId": "exit"
+  },
+  "startPart1": {
+    "type": "DIALOGUE",
+    "background": "nightStationExit",
+    "scriptId": "part1Script",
+    "onCompleteEventId": "enterMarshlands"
+  },
+  "enterMarshlands": {
+    "type": "CHANGE_SCENE",
+    "scene": "PointAndClick",
+    "sceneData": "marshlandsSceneData"
+  },
+  "startPart2": {
+    "type": "DIALOGUE",
+    "background": "marshlands1",
+    "scriptId": "marshlandsSceneData/part2"
+  },
+  "marshlands4_dialogue": {
+    "type": "DIALOGUE",
+    "scriptId": "marshlandsSceneData/marshlands4_entry"
+  },
+  "marshlands5_dialogue": {
+    "type": "DIALOGUE",
+    "scriptId": "marshlandsSceneData/marshlands5_entry",
+    "background": "marshlands5",
+    "onCompleteEventId": "moveToMarshlands6"
+  },
+  "moveToMarshlands6": {
+    "type": "CHANGE_LOCATION",
+    "locationId": "marshlands6"
+  },
+  "marshlands6_dialogue": {
+    "type": "DIALOGUE",
+    "scriptId": "marshlandsSceneData/marshlands6_entry",
+    "background": "marshlands6",
+    "onCompleteEventId": "startMarshlandsBattle"
+  },
+  "startMarshlandsBattle": {
+    "type": "CHANGE_SCENE",
+    "scene": "COMBAT",
+    "enemyId": "normal_horde",
+    "background": "marshlands7",
+    "onWinEventId": "winMarshlandsBattle"
+  },
+  "marshlands9_dialogue": {
+    "type": "DIALOGUE",
+    "scriptId": "marshlandsSceneData/marshlands9_entry",
+    "background": "marshlands9"
+  },
+  "winMarshlandsBattle": {
+    "type": "RETURN_TO_MAP",
+    "sceneData": "marshlandsSceneData",
+    "locationId": "marshlands9"
+  },
+  "startEgoBattle": {
+    "type": "CHANGE_SCENE",
+    "scene": "COMBAT",
+    "background": "marshlands9",
+    "enemyId": "commander_ego"
+  }
+}

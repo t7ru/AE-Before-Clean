@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="https://static.wikia.nocookie.net/alter-ego/images/4/4a/Site-favicon.ico"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALTER EGO: Before</title>
+
+    <meta
+      name="description"
+      content="A non-canon turn-based RPG set in a the TDS Universe. Lead your squad to Ego's Labyrinth and confront your own ego."
+    />
+    <meta
+      name="keywords"
+      content="RPG, turn-based, sci-fi, indie game, story-driven, ALTER EGO"
+    />
+    <meta name="theme-color" content="#1a1a2e" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ALTER EGO: Before" />
+    <meta
+      property="og:description"
+      content="A non-canon turn-based RPG set in the TDS Universe. Lead your squad to Ego's Labyrinth and confront your own ego."
+    />
+    <meta property="og:image" content="/aebbanner.png?v=2" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ALTER EGO: Before" />
+    <meta
+      name="twitter:description"
+      content="A non-canon turn-based RPG set in the TDS Universe. Lead your squad to Ego's Labyrinth and confront your own ego."
+    />
+    <meta name="twitter:image" content="/aebbanner.png?v=2" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D48H2PL948"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-D48H2PL948");
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "Uni Sans Heavy";
+        src: url("https://static.wikia.nocookie.net/abd-stand-archive/images/d/d6/Uni_Sans_Heavy.ttf")
+          format("truetype");
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000;
+        height: 100%;
+        width: 100%;
+      }
+      #game-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      canvas {
+        border-radius: 36px;
+        object-fit: contain;
+      }
+      #orientation-warning {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        color: white;
+        display: none; /* Hidden by default */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5em;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container"></div>
+    <div id="orientation-warning">
+      Please rotate your device to landscape mode for a better experience.
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

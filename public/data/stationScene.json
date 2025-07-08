@@ -1,0 +1,101 @@
+{
+  "initialLocation": "departTrain",
+  "scripts": {
+    "recruitmentIntro": [
+      {
+        "character": "Commander",
+        "sprite": "commanderDefault",
+        "background": "nightStationDepartTrain",
+        "text": "Alright, I'm here. The intel says the target is just past this station."
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderSkeptical",
+        "text": "I wonder where the squad is..."
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderSneaky",
+        "text": "Oh wait, I think I can see some friendlies up there."
+      },
+      {
+        "character": "Commander",
+        "sprite": "commanderSkeptical",
+        "text": "Hopefully they are indeed friendlies."
+      }
+    ]
+  },
+  "locations": {
+    "departTrain": {
+      "background": "nightStationDepartTrain",
+      "hotspots": [{ "x": 860, "y": 300, "destination": "startRecruitment" }]
+    },
+    "afterDepart": {
+      "background": "nightStationAfterDepart",
+      "hotspots": [{ "x": 870, "y": 350, "destination": "goToBeforeExit" }]
+    },
+    "beforeExit": {
+      "background": "nightStationBeforeExit",
+      "hotspots": [{ "x": 640, "y": 360, "destination": "goToExit" }]
+    },
+    "exit": {
+      "background": "nightStationExit",
+      "hotspots": [],
+      "onEnterEventId": "startPart1"
+    }
+  },
+  "recruitment": {
+    "background": "nightStationPartySelect",
+    "ui": {
+      "messagePosition": { "x": 640, "y": 60 },
+      "infoTextPosition": { "x": 640, "y": 110 },
+      "confirmButtonPosition": { "x": 640, "y": 650 }
+    },
+    "recruits": [
+      {
+        "name": "Scout",
+        "sprite": "scoutDefault",
+        "portrait": "scoutPortrait",
+        "x": 250,
+        "y": 450,
+        "dialogue": "Hey, Commander! I got deployed here too, do you want me on your squad? We've been working together since forever, heh.",
+        "removeDialogue": "You want me to stand down? Alright, Commander. I'll be on standby.",
+        "partyFullDialogue": "Looks like your squad is full. If a spot opens up, you know who to call.",
+        "bio": "A swift operative specializing in reconnaissance and exploiting weaknesses. He has been a valuable asset in previous missions, notably his accomplishments in Totality Tower and Bathroom Approach."
+      },
+      {
+        "name": "Toxic Gunner",
+        "sprite": "toxicGunnerDefault",
+        "portrait": "toxicGunnerPortrait",
+        "x": 500,
+        "y": 450,
+        "dialogue": "It's been a while since I was last on a mission—do not fret, Commander. I still got it.",
+        "removeDialogue": "Got changes? I'll pack up my chemicals if so. Let me know if you change your mind.",
+        "partyFullDialogue": "No room for me? What a pity, I really want to try out my new concoctions.",
+        "bio": "A specialist in debilitating toxins and firearms. Can sacrifice his mental well-being to gain tactical advantages for the squad."
+      },
+      {
+        "name": "Pyromancer",
+        "sprite": "pyromancerDefault",
+        "portrait": "pyromancerPortrait",
+        "x": 750,
+        "y": 450,
+        "dialogue": "Commander! Did you miss me? I certainly missed our barbeque parties. Anyway, give me a chance to light things up, you won't be disappointed!",
+        "removeDialogue": "What? Not bringing me along? Fine, more fire for me later, I guess.",
+        "partyFullDialogue": "The party's already lit without me? Hard to believe. Let me know if you need more firepower.",
+        "bio": "A pyrotechnics specialist who can charge up to unleash devastating area-of-effect fire attacks. He is widely known for his help in the Bathroom Approach mission, playing a big role in defeating Nerd Duck's forces."
+      },
+      {
+        "name": "Sledger",
+        "sprite": "sledgerDefault",
+        "portrait": "sledgerPortrait",
+        "x": 1000,
+        "y": 450,
+        "dialogue": "If you need a wall, I'm your wall. If you need something broken, I'm your hammer.",
+        "removeDialogue": "Was that too corny, Commander? Well, it's your call.",
+        "partyFullDialogue": "The line-up looks solid already. I'll be here if you need some heavy-duty backup.",
+        "bio": "A resilient vanguard who excels at defense. Can shield allies and disrupt foes with powerful ice-based attacks."
+      }
+    ]
+  }
+}
